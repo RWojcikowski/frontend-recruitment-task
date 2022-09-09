@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,19 +35,25 @@
         managed via a single app with no hardware required.
       </p> 
       <div class="btn">
-  <button class="button">Button</button> 
-</div>
-
+        <button data-modal-target="#popup" class="button">Button</button> 
+      </div>
     </div>
-  </div>
     <div class="popup" id="popup">
-      <div class="popup-content">
+    <div class="popup-bg">
 
-          <h1 class="title-popup">Alert!</h1>
-          <p class="text-popup">You have clicked X times to related button.</p>
+      <div class="x-icon">
+        <span data-close-button="" class="material-symbols-outlined">
+        close
+        </span>
+      </div>
+      <div class="popup-content">
+        <h1 class="title">Alert!</h1>
+        <p class="text">You have clicked X times to related button.</p>
+      </div>
 
     </div>
     </div> 
+</div>
 
 
 
