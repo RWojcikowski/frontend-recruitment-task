@@ -1,37 +1,20 @@
 
-// const openModalButtons = document.querySelectorAll('[data-modal-target]')
-// const closeModalButtons = document.querySelectorAll('[data-close-button]')
-// const overlay = document.getElementById('overlay')
+const popup = document.getElementById("popup");
 
-// openModalButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     const modal = document.querySelector(button.dataset.modalTarget)
-//     openModal(modal)
-//   })
-// })
+const btn = document.getElementById("btn");
 
-// overlay.addEventListener('click', () => {
-//   const modals = document.querySelectorAll('.modal.active')
-//   modals.forEach(modal => {
-//     closeModal(modal)
-//   })
-// })
+const span = document.getElementsByClassName("close")[0];
 
-// closeModalButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     const modal = button.closest('.modal')
-//     closeModal(modal)
-//   })
-// })
+btn.onclick = function() {
+  popup.style.display = "flex";
+}
 
-// function openModal(modal) {
-//   if (modal == null) return
-//   modal.classList.add('active')
-//   overlay.classList.add('active')
-// }
+span.onclick = function() {
+  popup.style.display = "none";
+}
 
-// function closeModal(modal) {
-//   if (modal == null) return
-//   modal.classList.remove('active')
-//   overlay.classList.remove('active')
-// }
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  };

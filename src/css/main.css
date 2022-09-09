@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .container {
     display: block!important;
  
@@ -115,7 +115,7 @@ body {
   top: 0px;
   position: absolute;
   top: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -140,4 +140,6 @@ body {
   margin-top: 40px;
   margin-right: 40px;
 }
+
+
 
