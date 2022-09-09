@@ -35,7 +35,7 @@
         managed via a single app with no hardware required.
       </p> 
       <div class="btn">
-        <button id="btn" class="button">Button</button> 
+        <button id="btn" class="button" >Button</button> 
       </div>
     </div>
     <div class="popup" id="popup">
@@ -47,9 +47,11 @@
       </div>
       <div class="popup-content">
         <h1 class="title">Alert!</h1>
-        <p class="text">You have clicked X times to related button.</p>
-      </div>
-
+        <p class="text">You have clicked <span id="number">0</span
+          > times to related button.</p>
+        </div>
+        
+        <button id="reset addbutton" class="button" onclick="reset()">Reset</button>
     </div>
     </div> 
 </div>
