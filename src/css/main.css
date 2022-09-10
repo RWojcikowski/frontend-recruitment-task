@@ -34,6 +34,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+#reset{
+  display: none ;
+ } 
+ 
 
 .container {
   display: flex;

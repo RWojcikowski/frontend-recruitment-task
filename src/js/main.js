@@ -5,6 +5,8 @@ const btn = document.getElementById("btn");
 
 const span = document.getElementsByClassName("close")[0];
 
+let number= 0
+
 btn.onclick = function() {
   popup.style.display = "flex";
 }
@@ -30,25 +32,26 @@ span.onclick = function() {
 
 
 // button reset clicks //
+
 function reset() {
-  let number = 0;
+   let number = 0;
 
   document.getElementById("number").innerHTML = number; 
+
 }
 
-//button show if > 5//
+//button show if >= 5//
 
 let btnReset = document.getElementById('btn');
 btnReset.addEventListener('click', ()=>{
   let element = document.getElementById('reset');
-	if (element.style.display != 'flex'){
-    	element.style.display = 'flex';
-    }
-  else{
-    element.style.display = 'none'
+  number++;
+
+	if (number < 4 ){
+    	element.style.display = 'none';
+    } else if(number > 4 ){
+    element.style.display = 'flex'
   }
+  
+
 })
-
-
-
-
