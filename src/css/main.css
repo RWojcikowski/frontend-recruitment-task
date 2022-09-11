@@ -36,6 +36,9 @@ body {
 }
 #reset{
   display: none ;
+  margin-top: -130px;
+  margin-left: 650px;
+
  } 
  
 

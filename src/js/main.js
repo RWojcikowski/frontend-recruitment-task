@@ -5,7 +5,19 @@ const btn = document.getElementById("btn");
 
 const span = document.getElementsByClassName("close")[0];
 
-let number= 0
+let number = 0
+
+
+// App.state = {
+//   number: 0,
+//   increment: () => {
+//     App.state.number++;
+//     updateTree();
+    
+//   }
+// // };
+
+
 
 btn.onclick = function() {
   popup.style.display = "flex";
@@ -34,7 +46,7 @@ span.onclick = function() {
 // button reset clicks //
 
 function reset() {
-   let number = 0;
+  number = 0
 
   document.getElementById("number").innerHTML = number; 
 
@@ -52,6 +64,4 @@ btnReset.addEventListener('click', ()=>{
     } else if(number > 4 ){
     element.style.display = 'flex'
   }
-  
-
 })
